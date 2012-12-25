@@ -1,7 +1,25 @@
 
 # cmu-soc
 
-  Fetch and parse the Carnegie Mellon University schedule of classes.
+  Parse the Carnegie Mellon University schedule of classes. For use with the Microsoft Excel-formatted `.dat` files available on [here](https://enr-apps.as.cmu.edu/open/SOC/web/images/documents.htm). When used as a Node.js module, outputs a JavaScript object. When used from the command line, outputs JSON to a file and optionally to the console.
+
+## Usage
+
+### Command Line
+```bash
+$ npm install -g cmu-soc
+$ cmu-soc <input file>
+```
+
+### Node.js Module
+```bash
+$ npm install cmu-soc
+```
+
+```javascript
+var soc = require('cmu-soc'),
+    courses = soc.parse(data);
+```
 
 ## License 
 
