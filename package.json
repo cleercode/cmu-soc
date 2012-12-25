@@ -1,0 +1,21 @@
+{
+  "name": "cmu-soc",
+  "version": "0.0.1",
+  "description": "Fetch and parse the Carnegie Mellon University schedule of classes.",
+  "keywords": ["cmu", "carnegie mellon"],
+  "author": "Chris Lee <chris@chrsl.net>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cleercode/cmu-soc.git"
+  },
+  "dependencies": {
+    "commander": "*"
+  },
+  "main": "./lib/soc.js",
+  "bin": {
+    "cmu-soc": "./bin/soc.js"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
